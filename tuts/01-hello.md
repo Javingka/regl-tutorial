@@ -22,7 +22,7 @@ Shaders receive information from 3 different types of variables:
 
 Vertex shaders receive inputs from attributes and output varying data to fragment shaders.  Fragment shaders take in the interpolated varying variables and output pixel colors.
 
-<script>
+```
 var regl = require('regl')()
 var text = require('./tuts/text.js')(regl)
 
@@ -237,7 +237,7 @@ regl.frame(({viewportWidth, viewportHeight, tick}) => {
   text('fragment shader', [0.2, -0.2 * aspect], 0.05, [0, 0, 0, 1])
   text('pixels', [0.75, -0.9], 0.05, [0, 0, 0, 1])
 })
-</script>
+```
 
 # getting set up
 
